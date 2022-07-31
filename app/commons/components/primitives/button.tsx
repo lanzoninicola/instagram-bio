@@ -12,7 +12,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     <button
       ref={ref}
       onClick={onClick}
-      className="bg-yellow-400 hover:bg-yellow-700  text-black-400 font-titles font-bold uppercase rounded "
+      className="bg-yellow-400 hover:bg-yellow-700  text-black-400 hover:text-white font-titles font-bold tracking-widest uppercase rounded-xl py-2 w-full"
       aria-label={ariaLabel}
     >
       {text}

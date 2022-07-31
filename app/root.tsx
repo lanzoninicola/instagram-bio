@@ -8,6 +8,7 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 import styles from "./styles/app.css";
+import remixImageStyles from "remix-image/remix-image.css";
 
 export function links() {
   return [
@@ -20,6 +21,7 @@ export function links() {
       rel: "preconnect",
       href: "https://fonts.gstatic.com/",
     },
+    { rel: "stylesheet", href: remixImageStyles },
   ];
 }
 
