@@ -1,3 +1,9 @@
 export default function Avatar() {
-  return <img src="/images/avatar.png" alt="Imagem de perfil" width={140} />;
+  return (
+    <img
+      src="/images/avatar-2xl.png"
+      alt="Imagem de perfil"
+      className="w-screen"
+    />
+  );
 }
