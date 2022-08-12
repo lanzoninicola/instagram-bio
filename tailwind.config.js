@@ -28,6 +28,31 @@ module.exports = {
         titles: ["Montserrat", "serif"],
         accent: ["Special Elite", "sans-serif"],
       },
+      backgroundImage: {
+        avatar: "url('/images/avatar-xl.png')",
+        "avatar-overlay":
+          "radial-gradient(60.9% 70.9% at 52.97% 30.82%, rgba(31, 52, 35, 0) 37.14%, #1F3423 77.89%)",
+      },
+      width: {
+        "absolute-m-2": "calc(100% - 2rem)",
+      },
+      height: {
+        400: "400px",
+      },
+      "inset-y": {
+        300: "300px",
+      },
+      animation: {
+        cta1: "cta1 5s linear infinite",
+      },
+      keyframes: {
+        cta1: {
+          "0%": { backgroundColor: "#CECB5B" },
+          "35%": { backgroundColor: "#98943F" },
+          "75%": { backgroundColor: "#9A643D", color: "#EFEEE6" },
+          "100%": { backgroundColor: "#CECB5B" },
+        },
+      },
     },
     plugins: [],
   },

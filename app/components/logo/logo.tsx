@@ -3,7 +3,7 @@ export default function Logo() {
     <img
       src="/images/logo.svg"
       alt="Dioni Mara Yoga & Terapia Logo"
-      width={140}
+      width={200}
     />
   );
 }
