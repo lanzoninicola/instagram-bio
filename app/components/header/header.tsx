@@ -1,6 +1,6 @@
 import Avatar from "../avatar/avatar";
 import Logo from "../logo/logo";
-import Button from "../primitives/button";
+import PrimaryButton from "../primitives/primary-button/primary-button";
 
 export default function Header() {
   return (
@@ -11,7 +11,7 @@ export default function Header() {
         style={{ top: "270px" }}
       >
         <Logo />
-        <Button
+        <PrimaryButton
           text="agende horário"
           onClick={() => alert("clicked")}
           ariaLabel="button"

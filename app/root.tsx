@@ -1,4 +1,4 @@
-import type { MetaFunction } from "@remix-run/node";
+import type { LoaderFunction, MetaFunction } from "@remix-run/node";
 import {
   Links,
   LiveReload,
@@ -6,9 +6,11 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
+  useLoaderData,
 } from "@remix-run/react";
 import styles from "./styles/app.css";
 import remixImageStyles from "remix-image/remix-image.css";
+import { withSentry } from "@sentry/remix";
 
 export function links() {
   return [
@@ -25,13 +27,25 @@ export function links() {
   ];
 }
 
+type LoaderData = {
+  GLOBALS: string;
+};
+export const loader: LoaderFunction = () => {
+  return {
+    GLOBALS: JSON.stringify({
+      SENTRY_DSN: process.env.SENTRY_DSN,
+    }),
+  };
+};
+
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
   title: "New Remix App",
   viewport: "width=device-width,initial-scale=1",
 });
 
-export default function App() {
+function App() {
+  const { GLOBALS } = useLoaderData() as LoaderData;
   return (
     <html lang="en" className="scroll-smooth">
       <head>
@@ -41,9 +55,17 @@ export default function App() {
       <body>
         <Outlet />
         <ScrollRestoration />
+        <script
+          suppressHydrationWarning
+          dangerouslySetInnerHTML={{
+            __html: `window.GLOBALS=${GLOBALS};`,
+          }}
+        />
         <Scripts />
         <LiveReload />
       </body>
     </html>
   );
 }
+
+export default withSentry(App);
