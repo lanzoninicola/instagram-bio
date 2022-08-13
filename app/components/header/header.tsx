@@ -1,23 +1,20 @@
-import Avatar from "../avatar/avatar";
-import Logo from "../logo/logo";
-import PrimaryButton from "../primitives/primary-button/primary-button";
+import { useEffect, useLayoutEffect, useState } from "react";
+
+import MediumHeader from "./medium-header/medium-header";
+import SmallHeader from "./small-header/small-header";
 
 export default function Header() {
-  return (
-    <header className="flex flex-col justify-center items-center gap-4 pb-8 bg-green-400">
-      <Avatar />
-      <div
-        className="absolute flex flex-col gap-4 items-center w-absolute-m-2 mx-8"
-        style={{ top: "270px" }}
-      >
-        <Logo />
-        <PrimaryButton
-          text="agende horário"
-          onClick={() => alert("clicked")}
-          ariaLabel="button"
-          CSSclass="animate-cta1"
-        />
-      </div>
-    </header>
-  );
+  const [currentMaxWidth, setCurrentMaxWidth] = useState<number>(640);
+
+  useEffect(() => {
+    if (window) {
+      setCurrentMaxWidth(window.innerWidth);
+    }
+  }, []);
+
+  if (currentMaxWidth <= 640) {
+    return <SmallHeader />;
+  }
+
+  return <MediumHeader />;
 }

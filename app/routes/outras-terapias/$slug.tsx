@@ -1,8 +1,7 @@
 import { json, LoaderFunction } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
-import { Whatsapp } from "~/components/primitives/icons/icons";
-import SecondaryButton from "~/components/primitives/secondary-button/secondary-button";
-import WhatsappLink from "~/components/primitives/whatsapp-link/whatsapp-link";
+import { CardContent } from "~/components/card";
+import CardImage from "~/components/card/card-image/card-image";
 import { getServiceBySlug } from "~/services/biz-services-manager.server";
 import { LoaderResponse, Service } from "~/types";
 
@@ -30,24 +29,16 @@ export default function TherapyPage() {
   }
 
   return (
-    <div className="card-inner flex flex-col relative">
-      <img
-        src={`/images/${service.image}.avif`}
-        alt={`Imagem da ${service.name}`}
-        className="w-full object-cover rounded-t-xl "
+    <>
+      <CardImage
+        serviceImageFilename={service.image}
+        serviceName={service.name}
       />
 
-      <div className="card-main flex flex-col px-8 pb-8 gap-8 -mt-8">
-        <div className="flex flex-col gap-4">
-          <h1 className="font-titles text-2xl text-white uppercase tracking-wide relative z-0">
-            {service.name}
-          </h1>
-          <p className="font-body ">{service.description}</p>
-        </div>
-        <div className="card-footer">
-          <WhatsappLink label="Agende uma sessão" secondary />
-        </div>
-      </div>
-    </div>
+      <CardContent
+        serviceName={service.name}
+        serviceDescription={service.description}
+      />
+    </>
   );
 }

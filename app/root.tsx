@@ -52,7 +52,7 @@ function App() {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="md:bg-green-400  md:flex md:flex-col md:items-center">
         <Outlet />
         <ScrollRestoration />
         <script

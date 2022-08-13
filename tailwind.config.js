@@ -30,6 +30,7 @@ module.exports = {
       },
       backgroundImage: {
         avatar: "url('/images/avatar-xl.png')",
+        "avatar-round": "url('/images/avatar-round.png')",
         "avatar-overlay":
           "radial-gradient(60.9% 70.9% at 52.97% 30.82%, rgba(31, 52, 35, 0) 37.14%, #1F3423 77.89%)",
       },
@@ -38,6 +39,8 @@ module.exports = {
       },
       height: {
         400: "400px",
+        "50vh": "50vh",
+        "33vh": "33vh",
       },
       "inset-y": {
         300: "300px",

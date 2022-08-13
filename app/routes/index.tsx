@@ -15,12 +15,14 @@ export default function Index() {
 
   return (
     <>
-      <Header />
+      <div className="md:max-w-md">
+        <Header />
 
-      <main className="flex flex-col gap-8 px-4 pb-8 bg-green-400">
-        <ServicesList services={data} />
-      </main>
-      <Footer />
+        <main className="flex flex-col px-4 pb-8 bg-green-400 w-full">
+          <ServicesList services={data} />
+        </main>
+        <Footer />
+      </div>
     </>
   );
 }

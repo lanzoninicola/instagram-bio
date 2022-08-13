@@ -3,7 +3,7 @@
 
 export default function Avatar() {
   return (
-    <div className="bg-avatar bg-right bg-no-repeat h-400 w-screen -ml-24 relative ">
+    <div className="bg-avatar bg-right bg-no-repeat h-400 w-screen -ml-24 relative">
       <div className="absolute inset-0 bg-avatar-overlay"></div>
     </div>
   );
