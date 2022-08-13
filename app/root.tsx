@@ -40,8 +40,12 @@ export const loader: LoaderFunction = () => {
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
-  title: "New Remix App",
   viewport: "width=device-width,initial-scale=1",
+  title: "Dioni Mara Yoga & Terapias",
+  description:
+    "Dioni Mara Yoga & Terapias. Invista na sua saúde e economize na farmácia.",
+  keywords:
+    "yoga terapias, yoga terapia, yoga pato branco, terapia pato branco, massagem pato branco, massagem relaxante pato branco, massoterapeuta pato branco, yoga gestantes, yoga adultos, yoga crianças",
 });
 
 function App() {

@@ -33,6 +33,8 @@ module.exports = {
         "avatar-round": "url('/images/avatar-round.png')",
         "avatar-overlay":
           "radial-gradient(60.9% 70.9% at 52.97% 30.82%, rgba(31, 52, 35, 0) 37.14%, #1F3423 77.89%)",
+        "service-image-overlay":
+          "linear-gradient(180deg, rgba(206, 203, 91, 0) 42.48%, #CECB5B 92.67%)",
       },
       width: {
         "absolute-m-2": "calc(100% - 2rem)",

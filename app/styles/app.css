@@ -641,6 +641,42 @@ video {
   left: 0px;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
+.top-4 {
+  top: 1rem;
+}
+
+.bottom-4 {
+  bottom: 1rem;
+}
+
+.top-16 {
+  top: 4rem;
+}
+
+.bottom-16 {
+  bottom: 4rem;
+}
+
+.-bottom-16 {
+  bottom: -4rem;
+}
+
+.-bottom-32 {
+  bottom: -8rem;
+}
+
+.top-48 {
+  top: 12rem;
+}
+
+.top-56 {
+  top: 14rem;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -648,11 +684,6 @@ video {
 .mx-8 {
   margin-left: 2rem;
   margin-right: 2rem;
-}
-
-.mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
 
 .-ml-24 {
@@ -683,24 +714,28 @@ video {
   height: 10rem;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .min-h-screen {
   min-height: 100vh;
-}
-
-.w-screen {
-  width: 100vw;
-}
-
-.w-absolute-m-2 {
-  width: calc(100% - 2rem);
 }
 
 .w-full {
   width: 100%;
 }
 
+.w-screen {
+  width: 100vw;
+}
+
 .w-40 {
   width: 10rem;
+}
+
+.w-absolute-m-2 {
+  width: calc(100% - 2rem);
 }
 
 .max-w-full {
@@ -761,6 +796,10 @@ video {
   background-image: radial-gradient(60.9% 70.9% at 52.97% 30.82%, rgba(31, 52, 35, 0) 37.14%, #1F3423 77.89%);
 }
 
+.bg-service-image-overlay {
+  background-image: linear-gradient(180deg, rgba(206, 203, 91, 0) 42.48%, #CECB5B 92.67%);
+}
+
 .bg-avatar-round {
   background-image: url('/images/avatar-round.png');
 }
@@ -788,6 +827,11 @@ video {
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .pb-8 {
@@ -829,6 +873,16 @@ video {
   line-height: 1.75rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -843,6 +897,14 @@ video {
 
 .tracking-wide {
   letter-spacing: 0.025em;
+}
+
+.tracking-tight {
+  letter-spacing: -0.025em;
+}
+
+.tracking-tighter {
+  letter-spacing: -0.05em;
 }
 
 .text-yellow-400 {
@@ -886,10 +948,6 @@ video {
     max-width: 28rem;
   }
 
-  .md\:max-w-xl {
-    max-width: 36rem;
-  }
-
   .md\:cursor-pointer {
     cursor: pointer;
   }
@@ -909,20 +967,5 @@ video {
   .md\:bg-green-400 {
     --tw-bg-opacity: 1;
     background-color: rgb(31 52 35 / var(--tw-bg-opacity));
-  }
-
-  .md\:px-40 {
-    padding-left: 10rem;
-    padding-right: 10rem;
-  }
-
-  .md\:px-80 {
-    padding-left: 20rem;
-    padding-right: 20rem;
-  }
-
-  .md\:px-96 {
-    padding-left: 24rem;
-    padding-right: 24rem;
   }
 }

@@ -9,13 +9,22 @@ export interface ServiceCategory {
   homepageLeafLevel: number;
 }
 
-export interface Service {
+export type Service = ServiceModel & SEOProps & LayoutProps;
+export interface ServiceModel {
   id: number;
   name: string;
   description: string | null;
   image: string | null;
   slug: string;
   categorySlug: CategorySlug;
+}
+
+interface SEOProps {
+  cardSubHeader: string;
+  keywords?: string[];
+}
+
+interface LayoutProps {
   homepageLeafLevel: number;
 }
 

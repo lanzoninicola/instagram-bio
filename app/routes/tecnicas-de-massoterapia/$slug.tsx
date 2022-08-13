@@ -1,6 +1,6 @@
 import { json, LoaderFunction } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
-import { CardContent } from "~/components/card";
+import { CardContent, CardHeader } from "~/components/card";
 import CardImage from "~/components/card/card-image/card-image";
 import { getServiceBySlug } from "~/services/biz-services-manager.server";
 import { LoaderResponse, Service } from "~/types";
@@ -33,11 +33,13 @@ export default function MassoterapyTecniquePage() {
       <CardImage
         serviceImageFilename={service.image}
         serviceName={service.name}
-      />
+      >
+        <CardHeader style="absolute px-8 top-56">{service.name}</CardHeader>
+      </CardImage>
 
       <CardContent
-        serviceName={service.name}
-        serviceDescription={service.description}
+        title={service.cardSubHeader}
+        content={service.description}
       />
     </>
   );
