@@ -43,7 +43,7 @@ export const meta: MetaFunction = () => ({
   viewport: "width=device-width,initial-scale=1",
   title: "Dioni Mara Yoga & Terapias",
   description:
-    "Dioni Mara Yoga & Terapias. Invista na sua saúde e economize na farmácia.",
+    "Invista na sua saúde e economize na farmácia. Terapias holisticas no tratamento de doenças. Técnicas de massoterapia, reflexoterapia, calatonia, terapia floral. Yoga adultos, crianças, terceira idade, gestantes.",
   keywords:
     "yoga terapias, yoga terapia, yoga pato branco, terapia pato branco, massagem pato branco, massagem relaxante pato branco, massoterapeuta pato branco, yoga gestantes, yoga adultos, yoga crianças",
 });

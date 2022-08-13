@@ -846,6 +846,10 @@ video {
   padding-top: 2rem;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .font-titles {
   font-family: Montserrat, serif;
 }
@@ -883,12 +887,25 @@ video {
   line-height: 2.25rem;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.leading-none {
+  line-height: 1;
+}
+
+.leading-tight {
+  line-height: 1.25;
 }
 
 .tracking-widest {
