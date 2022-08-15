@@ -5,21 +5,14 @@ module.exports = {
     extend: {
       colors: {
         yellow: {
-          400: "#CECB5B",
-          700: "#98943F",
+          400: "#F3FFA7",
+          700: "#A7C200",
         },
         green: {
-          400: "#1F3423",
-        },
-        brown: {
-          400: "#291D09",
-        },
-        orange: {
-          400: "#CDA684",
-          700: "#9A643D",
+          400: "#149296",
         },
         black: {
-          400: "#1B1B1B",
+          400: "#0F162B",
           700: "#000000",
         },
       },
@@ -32,9 +25,9 @@ module.exports = {
         avatar: "url('/images/avatar-xl.png')",
         "avatar-round": "url('/images/avatar-round.png')",
         "avatar-overlay":
-          "radial-gradient(60.9% 70.9% at 52.97% 30.82%, rgba(31, 52, 35, 0) 37.14%, #1F3423 77.89%)",
+          "radial-gradient(60.9% 70.9% at 52.97% 30.82%, rgba(31, 52, 35, 0) 37.14%, #149296 77.89%)",
         "service-image-overlay":
-          "linear-gradient(180deg, rgba(206, 203, 91, 0) 42.48%, #CECB5B 92.67%)",
+          "linear-gradient(180deg, rgba(206, 203, 91, 0) 42.48%, #F3FFA7 92.67%)",
       },
       width: {
         "absolute-m-2": "calc(100% - 2rem)",

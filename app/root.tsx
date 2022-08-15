@@ -24,6 +24,11 @@ export function links() {
       href: "https://fonts.gstatic.com/",
     },
     { rel: "stylesheet", href: remixImageStyles },
+    {
+      rel: "shortcut icon",
+      href: "favicon.ico",
+      type: "image/x-icon",
+    },
   ];
 }
 
@@ -43,7 +48,7 @@ export const meta: MetaFunction = () => ({
   viewport: "width=device-width,initial-scale=1",
   title: "Dioni Mara Yoga & Terapias",
   description:
-    "Invista na sua saúde e economize na farmácia. Terapias holisticas no tratamento de doenças. Técnicas de massoterapia, reflexoterapia, calatonia, terapia floral. Yoga adultos, crianças, terceira idade, gestantes.",
+    "Invista na sua saúde e economize na farmácia. Terapias holisticas no tratamento de doenças. Yoga adultos, crianças, terceira idade, gestantes.",
   keywords:
     "yoga terapias, yoga terapia, yoga pato branco, terapia pato branco, massagem pato branco, massagem relaxante pato branco, massoterapeuta pato branco, yoga gestantes, yoga adultos, yoga crianças",
 });

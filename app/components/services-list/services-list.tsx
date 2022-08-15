@@ -18,6 +18,7 @@ export default function ServicesList({ services }: ServicesListProps) {
             <ButtonLink
               key={idx}
               label={s.name}
+              title={`Detalhes sobre ${s.name}`}
               variant="filled"
               color="yellow"
               to={`/${s.categorySlug}/${s.slug}`}
@@ -43,6 +44,7 @@ export default function ServicesList({ services }: ServicesListProps) {
                         variant="outline"
                         color="yellow"
                         to={`/${children.categorySlug}/${children.slug}`}
+                        title={`Detalhes sobre ${children.name}`}
                       />
                     );
                   })}

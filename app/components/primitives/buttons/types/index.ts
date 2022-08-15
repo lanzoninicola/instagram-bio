@@ -9,4 +9,5 @@ export interface ButtonProps {
 
 export interface ButtonLinkProps extends ButtonProps {
   to: string;
+  title: string;
 }

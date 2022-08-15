@@ -2,7 +2,7 @@ import { json, LoaderFunction } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 import { CardContent, CardHeader } from "~/components/card";
 import CardImage from "~/components/card/card-image/card-image";
-import { getServiceBySlug } from "~/services/biz-services-manager.server";
+import { getServiceBySlug } from "~/server/services/biz-services-manager.server";
 import { LoaderResponse, Service } from "~/types";
 
 export const loader: LoaderFunction = async ({ params }) => {

@@ -4,7 +4,7 @@ import Button from "../button/button";
 
 export default function ButtonLink({ ...props }: ButtonLinkProps) {
   return (
-    <Link to={props.to}>
+    <Link to={props.to} title={props.title}>
       <Button {...props} />
     </Link>
   );

@@ -1,5 +1,5 @@
-import BIZ_SERVICES_CATEGORY from "~/data/biz-service-categories.server";
-import BIZ_SERVICES from "~/data/biz-services.server";
+import BIZ_SERVICES_CATEGORY from "~/server/data/biz-service-categories.server";
+import BIZ_SERVICES from "~/server/data/biz-services.server";
 
 export function getAllCategories() {
   return BIZ_SERVICES_CATEGORY;
