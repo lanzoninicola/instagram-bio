@@ -1,11 +1,9 @@
 export interface ButtonProps {
-  variant: "outline" | "filled" | "text";
-  color: "yellow" | "green";
   label?: string;
   icon?: React.ReactElement;
   containerStyle?: string;
   labelStyle?: string;
-  clazzName?: React.HTMLAttributes<HTMLDivElement>["className"];
+  clazzName?: React.HTMLAttributes<any>["className"];
 }
 
 export interface ButtonLinkProps extends ButtonProps {

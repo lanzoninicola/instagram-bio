@@ -30,20 +30,18 @@ export default function ServiceSingleFooter() {
       </Link>
       <div className="mt-8">
         <ButtonFloat
-          label="Pedir informações"
-          variant="filled"
-          color="green"
+          label="Peça informações"
           floatX="right"
           icon={<WhatsappIcon size={16} color={"white"} />}
+          clazzName="bg-green-400 text-white px-4"
         />
 
         <ButtonLink
           to="/"
-          variant="outline"
-          color="green"
           label="voltar"
           labelStyle="text-green-400"
           title="voltar"
+          clazzName="border-green-400 border-2"
         />
       </div>
     </div>

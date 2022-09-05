@@ -1,8 +1,11 @@
 import Avatar from "~/components/avatar/avatar";
 import Logo from "~/components/logo/logo";
-import WhatsappButtonLink from "~/components/whatsapp-button-link/whatsapp-button-link";
 
-export default function SmallHeader() {
+export default function SmallHeader({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <header className="flex flex-col justify-center items-center gap-4 pb-8 bg-green-400">
       <Avatar />
@@ -11,11 +14,7 @@ export default function SmallHeader() {
         style={{ top: "270px" }}
       >
         <Logo />
-        <WhatsappButtonLink
-          label="agende horário"
-          color="yellow"
-          variant="filled"
-        />
+        {children}
       </div>
     </header>
   );

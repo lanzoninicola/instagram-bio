@@ -5,30 +5,24 @@ import { WhatsappIcon } from "../primitives/icons/icons";
 
 interface WhatsappButtonLinkProps {
   label: string;
-  variant: "outline" | "filled";
-  color: "yellow" | "green";
+  iconColor?: string;
   /** The message to send with whatsapp */
   message?: string;
+  clazzName?: React.HTMLAttributes<any>["className"];
 }
 
 export default function WhatsappButtonLink({
   label,
-  variant,
-  color,
   message,
+  clazzName,
+  iconColor = "white",
 }: WhatsappButtonLinkProps) {
   return (
     <WhatsappExternalLink ariaLabel={`${label} com WhatsApp`} message={message}>
       <Button
         label={label}
-        color={color}
-        variant={variant}
-        icon={
-          <WhatsappIcon
-            size={24}
-            color={color === "yellow" ? "black" : "white"}
-          />
-        }
+        icon={<WhatsappIcon size={24} color={iconColor} />}
+        clazzName={clazzName}
       />
     </WhatsappExternalLink>
   );

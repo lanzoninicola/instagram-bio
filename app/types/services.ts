@@ -5,6 +5,7 @@ export interface ServiceCategory {
   image: string | null;
   slug: CategorySlug;
   categorySlug: CategorySlug | null;
+  emoji?: string;
   /** Level of visibility on the homepage */
   homepageLeafLevel: number;
 }
@@ -21,6 +22,7 @@ export interface ServiceModel {
   image: string | null;
   slug: string;
   categorySlug: CategorySlug;
+  emoji?: string;
 }
 
 export type ServiceFaq = Record<CategorySlug, string[]>;

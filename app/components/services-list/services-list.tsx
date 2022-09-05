@@ -24,10 +24,10 @@ export default function ServicesList({ services }: ServicesListProps) {
               key={idx}
               label={s.name}
               title={`Detalhes sobre ${s.name}`}
-              variant="filled"
-              color="yellow"
               to={`/${s.categorySlug}/${s.slug}`}
               containerStyle="transition-all"
+              clazzName={`bg-yellow-400`}
+              icon={<span>{s.emoji}</span>}
             />
           );
         }
@@ -36,7 +36,11 @@ export default function ServicesList({ services }: ServicesListProps) {
           s.homepageLeafLevel === 0 && (
             <details key={idx} onToggle={onServiceToggle}>
               <summary className="list-none md:cursor-pointer">
-                <Button label={s.name} variant="filled" color="yellow" />
+                <Button
+                  label={s.name}
+                  clazzName={`bg-yellow-400`}
+                  icon={<span>{s.emoji}</span>}
+                />
               </summary>
               <div className="flex flex-col gap-4 mt-4 transition-all">
                 {services
@@ -46,10 +50,10 @@ export default function ServicesList({ services }: ServicesListProps) {
                       <ButtonLink
                         key={idx}
                         label={children.name}
-                        variant="outline"
-                        color="yellow"
                         to={`/${children.categorySlug}/${children.slug}`}
+                        // icon={<span>{children.emoji}</span>}
                         title={`Detalhes sobre ${children.name}`}
+                        clazzName={`border-yellow-400 border-2 text-yellow-400`}
                       />
                     );
                   })}

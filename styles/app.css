@@ -6,18 +6,6 @@
   .btn {
     @apply flex justify-center items-center gap-4 rounded-3xl py-3 w-full;
   }
-  .btn-yellow-filled {
-    @apply bg-yellow-400 hover:bg-yellow-700 text-black-400 hover:text-white;
-  }
-  .btn-yellow-outline {
-    @apply border-yellow-400 border-2 hover:bg-yellow-700 text-yellow-400 hover:text-white;
-  }
-  .btn-green-filled {
-    @apply bg-green-400 hover:bg-green-700 text-white;
-  }
-  .btn-green-outline {
-    @apply border-green-400 border-2 hover:bg-green-700 text-black-400 hover:text-white;
-  }
   .btn-label {
     @apply font-titles tracking-widest uppercase;
   }

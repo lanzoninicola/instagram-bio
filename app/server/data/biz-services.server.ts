@@ -32,6 +32,7 @@ const BIZ_SERVICES: ServiceModelWithSEO[] = [
     slug: "massagem-modeladora",
     categorySlug: "tecnicas-de-massoterapia",
     homepageLeafLevel: 1,
+    emoji: "💆",
     seo: {
       title: "Massagem Modeladora",
       description:
@@ -64,6 +65,7 @@ const BIZ_SERVICES: ServiceModelWithSEO[] = [
     slug: "massagem-relaxante",
     categorySlug: "tecnicas-de-massoterapia",
     homepageLeafLevel: 1,
+    emoji: "💆",
     seo: {
       title: "Massagem Relaxante",
       description:
@@ -102,6 +104,7 @@ const BIZ_SERVICES: ServiceModelWithSEO[] = [
     slug: "quick-massage",
     categorySlug: "tecnicas-de-massoterapia",
     homepageLeafLevel: 1,
+    emoji: "💆",
     seo: {
       title: "Quick Massage",
       description:
@@ -163,6 +166,7 @@ const BIZ_SERVICES: ServiceModelWithSEO[] = [
     slug: "ventosaterapia",
     categorySlug: "tecnicas-de-massoterapia",
     homepageLeafLevel: 1,
+    emoji: "💆",
     seo: {
       title: "Ventosaterapia",
       description:
@@ -206,6 +210,7 @@ const BIZ_SERVICES: ServiceModelWithSEO[] = [
     slug: "drenagem-linfatica",
     categorySlug: "tecnicas-de-massoterapia",
     homepageLeafLevel: 1,
+    emoji: "💆",
     seo: {
       title: "Drenagem Linfatica",
       description:
@@ -249,6 +254,7 @@ const BIZ_SERVICES: ServiceModelWithSEO[] = [
     slug: "pedras-quentes",
     categorySlug: "tecnicas-de-massoterapia",
     homepageLeafLevel: 1,
+    emoji: "💆",
     seo: {
       title: "Pedras Quentes",
       description:
@@ -293,6 +299,7 @@ const BIZ_SERVICES: ServiceModelWithSEO[] = [
     slug: "bambuterapia",
     categorySlug: "tecnicas-de-massoterapia",
     homepageLeafLevel: 1,
+    emoji: "💆",
     seo: {
       title: "Bambuterapia",
       description:
@@ -339,6 +346,7 @@ const BIZ_SERVICES: ServiceModelWithSEO[] = [
     slug: "massagem-desportiva",
     categorySlug: "tecnicas-de-massoterapia",
     homepageLeafLevel: 1,
+    emoji: "💆",
     seo: {
       title: "Massagem Desportiva",
       description:
@@ -382,6 +390,7 @@ const BIZ_SERVICES: ServiceModelWithSEO[] = [
     slug: "reflexoterapia",
     categorySlug: "outras-terapias",
     homepageLeafLevel: 0,
+    emoji: "👣",
     seo: {
       title: "Reflexoterapia",
       description:
@@ -443,6 +452,7 @@ const BIZ_SERVICES: ServiceModelWithSEO[] = [
     slug: "calatonia",
     categorySlug: "outras-terapias",
     homepageLeafLevel: 0,
+    emoji: "👣",
     seo: {
       title: "Calatonia",
       description:
@@ -496,6 +506,7 @@ const BIZ_SERVICES: ServiceModelWithSEO[] = [
     slug: "terapia-floral",
     categorySlug: "outras-terapias",
     homepageLeafLevel: 0,
+    emoji: "🌸",
     seo: {
       title: "Terapia Floral",
       description:
@@ -505,7 +516,7 @@ const BIZ_SERVICES: ServiceModelWithSEO[] = [
   },
   {
     id: 11,
-    name: "Terceira idade",
+    name: "Yoga Terceira idade",
     description:
       "A prática do Yoga é eficaz em todas as idades, e não é diferente para os praticantes da terceira idade. Nessa fase, o Yoga é uma ferramenta capaz de proporcionar fortalecimento muscular, diminuir a incidência de fraturas e auxiliar no tratamento de osteoporose.",
     content: [
@@ -530,6 +541,7 @@ const BIZ_SERVICES: ServiceModelWithSEO[] = [
     slug: "yoga-terceira-idade",
     categorySlug: "yoga",
     homepageLeafLevel: 1,
+    emoji: "🧘‍♂️",
     seo: {
       title: "Yoga para terceira idade",
       description:
@@ -539,7 +551,7 @@ const BIZ_SERVICES: ServiceModelWithSEO[] = [
   },
   {
     id: 12,
-    name: "Adultos",
+    name: "Yoga Adultos",
     description:
       "Yoga é uma prática milenar desenvolvida para trazer harmonia e equilíbrio para o indivíduo como um todo.",
     content: [
@@ -558,6 +570,7 @@ const BIZ_SERVICES: ServiceModelWithSEO[] = [
     slug: "yoga-adultos",
     categorySlug: "yoga",
     homepageLeafLevel: 1,
+    emoji: "🧘‍♂️",
     seo: {
       title: "Yoga para adultos",
       description:
@@ -567,7 +580,7 @@ const BIZ_SERVICES: ServiceModelWithSEO[] = [
   },
   {
     id: 13,
-    name: "Gestantes",
+    name: "Yoga Gestantes",
     description:
       "A expectativa da chegada de um filho pode causar  ansiedade e insegurança. As dúvidas e medo da hora do parto, o momento mais esperado (e muitas vezes o mais temido) causam estresse. Por isso o yoga pode ser uma ótima aliada! Estudos indicam que o nascimento prematuro de alguns bebês pode estar atrelado ao alto nível de estresse da mãe durante a gravidez. Praticar yoga na gestação ajuda a reduzir o estresse justamente porque é uma atividade que aumenta a liberação de serotonina, o hormônio da felicidade.",
     content: [
@@ -592,6 +605,7 @@ const BIZ_SERVICES: ServiceModelWithSEO[] = [
     slug: "yoga-gestantes",
     categorySlug: "yoga",
     homepageLeafLevel: 1,
+    emoji: "🧘‍♂️",
     seo: {
       title: "Yoga para gestantes",
       description:
@@ -601,7 +615,7 @@ const BIZ_SERVICES: ServiceModelWithSEO[] = [
   },
   {
     id: 14,
-    name: "Crianças",
+    name: "Yoga Crianças",
     description:
       "A prática de yoga na infância ajuda na melhora de condições psicofísicas e desenvolve habilidades cognitivas e sociais. É de grande ajuda para crianças hiperativas, ansiosas, temerosas ou que manifestam déficit de atenção e distúrbios de aprendizagem.",
     content: [
@@ -625,6 +639,7 @@ const BIZ_SERVICES: ServiceModelWithSEO[] = [
     slug: "yoga-criancas",
     categorySlug: "yoga",
     homepageLeafLevel: 1,
+    emoji: "🧘‍♂️",
     seo: {
       title: "Yoga para crianças",
       description:

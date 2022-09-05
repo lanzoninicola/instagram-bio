@@ -9,6 +9,7 @@ const BIZ_SERVICES_CATEGORY: ServiceCategory[] = [
     slug: "yoga",
     categorySlug: null,
     homepageLeafLevel: 0,
+    emoji: "🧘‍♂️",
   },
   {
     id: 3,
@@ -17,6 +18,7 @@ const BIZ_SERVICES_CATEGORY: ServiceCategory[] = [
     image: null,
     slug: "tecnicas-de-massoterapia",
     categorySlug: "terapias",
+    emoji: "💆",
     homepageLeafLevel: 0,
   },
   {
