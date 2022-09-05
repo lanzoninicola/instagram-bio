@@ -37,7 +37,8 @@ export default function Index() {
           <ServicesList services={data.services} />
           <div className="flex flex-col gap-4 px-4 pb-8">
             <h1 className="font-titles  text-yellow-400 text-md leading-tight uppercase">
-              Yoga e terapias holisticas pelo tratamento das doenças emocionais
+              Yoga, massoterapia e terapias holisticas pelo tratamento das
+              doenças emocionais
             </h1>
             <p className="font-body text-yellow-400 text-lg leading-tight text-justify">
               Olá! Meu nome é Dioni Mara. Entendo a importância do autocuidado,

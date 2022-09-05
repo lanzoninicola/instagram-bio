@@ -1,3 +1,4 @@
+import React from "react";
 import { Service, ServiceCategory } from "~/types";
 import { ButtonLink, Button } from "../primitives/buttons";
 
@@ -6,13 +7,20 @@ interface ServicesListProps {
 }
 
 export default function ServicesList({ services }: ServicesListProps) {
+  const [currentSlugOpen, setCurrentSlugOpen] = React.useState<string | null>(
+    null
+  );
+
   function hasChildren(service: Service | ServiceCategory) {
     return services.filter((s) => s.categorySlug === service.slug).length > 0;
   }
 
   function onServiceToggle(e: any) {
-    console.log(e.target);
-    console.log(e.currentTarget);
+    if (e.target.getAttribute("open") === "true") {
+      setCurrentSlugOpen(null);
+    } else {
+      setCurrentSlugOpen(e.target.getAttribute("data-slug"));
+    }
   }
 
   return (
@@ -34,7 +42,12 @@ export default function ServicesList({ services }: ServicesListProps) {
 
         return (
           s.homepageLeafLevel === 0 && (
-            <details key={idx} onToggle={onServiceToggle}>
+            <details
+              key={idx}
+              onToggle={onServiceToggle}
+              data-slug={s.slug}
+              open={currentSlugOpen === s.slug}
+            >
               <summary className="list-none md:cursor-pointer">
                 <Button
                   label={s.name}
