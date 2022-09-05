@@ -1,8 +1,7 @@
 import { json, LoaderFunction } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
-import { CardContent, CardHeader } from "~/components/card";
-import CardImage from "~/components/card/card-image/card-image";
-import { getServiceBySlug } from "~/server/services/biz-services-manager.server";
+import SlugPage from "~/components/slug-page/slug-page";
+import { getServiceBySlug } from "~/server/entities/biz-services.entities";
 import { LoaderResponse, Service } from "~/types";
 
 export const loader: LoaderFunction = async ({ params }) => {
@@ -19,7 +18,7 @@ export const loader: LoaderFunction = async ({ params }) => {
   return json({ ok: true, status: 200, payload: serviceData });
 };
 
-export default function YogaPage() {
+export default function YogaIndex() {
   const serviceData: LoaderResponse<Service> = useLoaderData();
 
   const { status, payload: service } = serviceData;
@@ -28,19 +27,5 @@ export default function YogaPage() {
     return <h1>Something went wrong</h1>;
   }
 
-  return (
-    <>
-      <CardImage
-        serviceImageFilename={service.image}
-        serviceName={service.name}
-      >
-        <CardHeader style="absolute px-8 top-56">{service.name}</CardHeader>
-      </CardImage>
-
-      <CardContent
-        title={service.cardSubHeader}
-        content={service.description}
-      />
-    </>
-  );
+  return <SlugPage service={service} />;
 }

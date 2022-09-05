@@ -3,15 +3,17 @@ import { useLoaderData } from "@remix-run/react";
 import Footer from "~/components/footer/footer";
 import Header from "~/components/header/header";
 import ServicesList from "~/components/services-list/services-list";
-import { getAll } from "~/server/services/biz-services-manager.server";
-import { Service } from "~/types";
+import { getAll as getAllCategories } from "~/server/entities/biz-services-category.entities";
+import { getAll as getAllServices } from "~/server/entities/biz-services.entities";
+
+import { ServiceAndCategory } from "~/types/services";
 
 export const loader: LoaderFunction = async () => {
-  return json(getAll());
+  return json([...getAllCategories(), ...getAllServices()]);
 };
 
 export default function Index() {
-  const data: Service[] = useLoaderData();
+  const data: ServiceAndCategory[] = useLoaderData();
 
   return (
     <>

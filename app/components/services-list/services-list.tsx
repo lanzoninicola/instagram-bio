@@ -10,6 +10,11 @@ export default function ServicesList({ services }: ServicesListProps) {
     return services.filter((s) => s.categorySlug === service.slug).length > 0;
   }
 
+  function onServiceToggle(e: any) {
+    console.log(e.target);
+    console.log(e.currentTarget);
+  }
+
   return (
     <div className="flex flex-col gap-4">
       {services.map((s, idx) => {
@@ -29,7 +34,7 @@ export default function ServicesList({ services }: ServicesListProps) {
 
         return (
           s.homepageLeafLevel === 0 && (
-            <details key={idx}>
+            <details key={idx} onToggle={onServiceToggle}>
               <summary className="list-none md:cursor-pointer">
                 <Button label={s.name} variant="filled" color="yellow" />
               </summary>

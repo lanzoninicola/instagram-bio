@@ -1,6 +1,6 @@
 import Avatar from "~/components/avatar/avatar";
 import Logo from "~/components/logo/logo";
-import WhatsappLink from "~/components/primitives/whatsapp-link/whatsapp-link";
+import WhatsappButtonLink from "~/components/whatsapp-button-link/whatsapp-button-link";
 
 export default function SmallHeader() {
   return (
@@ -11,7 +11,11 @@ export default function SmallHeader() {
         style={{ top: "270px" }}
       >
         <Logo />
-        <WhatsappLink label="agende horário" color="yellow" variant="filled" />
+        <WhatsappButtonLink
+          label="agende horário"
+          color="yellow"
+          variant="filled"
+        />
       </div>
     </header>
   );

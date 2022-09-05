@@ -10,29 +10,33 @@ const Button = forwardRef(
       icon,
       containerStyle = "",
       labelStyle = "",
+      clazzName = "",
     }: ButtonProps,
     ref: any
   ) => {
-    let style = "";
+    let btnVariant = "";
 
     if (variant === "outline" && color === "yellow") {
-      style = "btn-yellow-outline";
+      btnVariant = "btn-yellow-outline";
     }
 
     if (variant === "outline" && color === "green") {
-      style = "btn-green-outline";
+      btnVariant = "btn-green-outline";
     }
 
     if (variant === "filled" && color === "yellow") {
-      style = "btn-yellow-filled";
+      btnVariant = "btn-yellow-filled";
     }
 
     if (variant === "filled" && color === "green") {
-      style = "btn-green-filled";
+      btnVariant = "btn-green-filled";
     }
 
     return (
-      <div ref={ref} className={`btn ${style} ${containerStyle}`}>
+      <div
+        ref={ref}
+        className={`btn ${btnVariant} ${containerStyle} ${clazzName}`}
+      >
         <span className={`btn-label ${labelStyle}`}>{label}</span>
         {icon}
       </div>

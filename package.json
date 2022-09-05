@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@next-boost/hybrid-disk-cache": "^0.3.0",
+    "@react-icons/all-files": "^4.1.0",
     "@remix-run/node": "^1.6.5",
     "@remix-run/react": "^1.6.5",
     "@remix-run/vercel": "^1.6.5",

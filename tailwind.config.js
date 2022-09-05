@@ -9,6 +9,7 @@ module.exports = {
           700: "#A7C200",
         },
         green: {
+          300: "#6EC6CA",
           400: "#149296",
         },
         black: {

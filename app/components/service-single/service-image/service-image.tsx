@@ -6,7 +6,7 @@ interface CardImageProps {
   children?: React.ReactNode;
 }
 
-export default function CardImage({
+export default function ServiceImage({
   serviceName,
   serviceImageFilename,
   withOverlay = true,

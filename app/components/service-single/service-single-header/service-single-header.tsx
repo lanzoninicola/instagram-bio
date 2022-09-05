@@ -3,7 +3,10 @@ interface CardHeaderProps {
   style?: string;
 }
 
-export default function CardHeader({ children, style }: CardHeaderProps) {
+export default function ServiceSingleHeader({
+  children,
+  style,
+}: CardHeaderProps) {
   return (
     <h1
       className={`font-titles text-4xl text-black-400 uppercase tracking-tighter relative  ${style}`}

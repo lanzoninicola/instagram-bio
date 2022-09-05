@@ -2,15 +2,6 @@ import { ServiceCategory } from "~/types";
 
 const BIZ_SERVICES_CATEGORY: ServiceCategory[] = [
   {
-    id: 1,
-    name: "Terapias",
-    description: null,
-    image: null,
-    slug: "terapias",
-    categorySlug: null,
-    homepageLeafLevel: -1,
-  },
-  {
     id: 2,
     name: "Yoga",
     description: null,

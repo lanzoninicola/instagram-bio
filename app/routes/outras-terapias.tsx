@@ -1,10 +1,5 @@
-import { Outlet } from "@remix-run/react";
-import Card from "~/components/card/card/card";
+import TherapyPage from "~/components/therapy-page/therapy-page";
 
 export default function OtherTherapiesIndex() {
-  return (
-    <Card>
-      <Outlet />
-    </Card>
-  );
+  return <TherapyPage />;
 }
