@@ -18,7 +18,7 @@ export const loader: LoaderFunction = async ({ params }) => {
   return json({ ok: true, status: 200, payload: serviceData });
 };
 
-export default function MaxoteraphyIndex() {
+export default function MaxoteraphySlug() {
   const serviceData: LoaderResponse<Service> = useLoaderData();
 
   const { status, payload: service } = serviceData;

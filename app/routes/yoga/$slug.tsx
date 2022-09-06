@@ -18,7 +18,7 @@ export const loader: LoaderFunction = async ({ params }) => {
   return json({ ok: true, status: 200, payload: serviceData });
 };
 
-export default function YogaIndex() {
+export default function YogaSlug() {
   const serviceData: LoaderResponse<Service> = useLoaderData();
 
   const { status, payload: service } = serviceData;

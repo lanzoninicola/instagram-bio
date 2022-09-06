@@ -3,7 +3,6 @@ import { useCallback, useReducer } from "react";
 const getInitialState =
   (key: string, onError?: (error: any) => void) => (initialState: any) => {
     try {
-      console.log(initialState);
       const item = window.localStorage.getItem(key);
       return item ? JSON.parse(item) : initialState;
     } catch (error) {
@@ -26,13 +25,13 @@ const getInitialState =
  *
  * @returns
  */
-export default function useReducerLocalStorage<T>(
+export default function useReducerLocalStorage<T, Action>(
   key: string,
   reducer: (state: T, action: any) => T,
   initialState: T,
   onError?: (error: any) => void
 ) {
-  const wrappedReducer = useCallback((state: T, action: string) => {
+  const wrappedReducer = useCallback((state: T, action: Action) => {
     const newState = reducer(state, action);
     try {
       window.localStorage.setItem(key, JSON.stringify(newState));

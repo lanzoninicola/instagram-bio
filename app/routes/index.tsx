@@ -37,18 +37,17 @@ export default function Index() {
           <ServicesList services={data.services} />
           <div className="flex flex-col gap-4 px-4 pb-8">
             <h1 className="font-titles  text-yellow-400 text-md leading-tight uppercase">
-              Yoga, massoterapia e terapias holisticas pelo tratamento das
+              Yoga, massoterapia e terapias holísticas para tratamento das
               doenças emocionais
             </h1>
             <p className="font-body text-yellow-400 text-lg leading-tight text-justify">
               Olá! Meu nome é Dioni Mara. Entendo a importância do autocuidado,
               do bem-estar. Yoga, Massoterapia e Terapias Holísticas são as
               minhas ferramentas para ajudá-lo a alcançar seus objetivos de
-              saúde, tanto a curto quanto a longo prazo. Venha e veja por si
-              mesmo o valor que a massagem terapêutica tem em seu corpo, mente e
-              espírito. Convido você a vivenciar uma experiência única,
-              terapêutica e relaxante, para garantir o benefício das técnicas de
-              massoterapia!
+              saúde, tanto a curto quanto a longo prazo. Convido você a
+              vivenciar uma experiência única, terapêutica e relaxante, venha e
+              veja por si mesmo o valor que a massagem terapêutica e a pratíca
+              do yoga tem em seu corpo, mente e espírito.
             </p>
           </div>
         </main>

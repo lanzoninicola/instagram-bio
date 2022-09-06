@@ -18,3 +18,8 @@ export function getServicesWARequestsByCategorySlug(categorySlug: string) {
   const requests = getAllServicesWhatsappRequests();
   return requests[categorySlug as keyof typeof requests];
 }
+
+export function getServicesByCategorySlug(categorySlug: string) {
+  const services = getAll();
+  return services.filter((service) => service.categorySlug === categorySlug);
+}

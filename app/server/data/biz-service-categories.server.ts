@@ -17,7 +17,7 @@ const BIZ_SERVICES_CATEGORY: ServiceCategory[] = [
     description: null,
     image: null,
     slug: "tecnicas-de-massoterapia",
-    categorySlug: "terapias",
+    categorySlug: null,
     emoji: "💆",
     homepageLeafLevel: 0,
   },
@@ -27,7 +27,7 @@ const BIZ_SERVICES_CATEGORY: ServiceCategory[] = [
     description: null,
     image: null,
     slug: "outras-terapias",
-    categorySlug: "terapias",
+    categorySlug: null,
     homepageLeafLevel: -1,
   },
 ];
